@@ -7,49 +7,78 @@
     <title>DaVintage - Your Vintage Store</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to bottom, #ffefba, #ffffff);
+            color: #333;
         }
 
         header {
-            background-color: #2b2b2b;
+            background-color: #6a1b9a;
             color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .logo h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #ffe082;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo p {
+            font-size: 16px;
+            margin: 0;
+            color: #d7ccc8;
+            font-style: italic;
         }
 
         .search-bar {
+            margin-top: 20px;
             display: flex;
-            align-items: center;
+            justify-content: center;
         }
 
         .search-bar input {
-            padding: 5px;
+            padding: 8px;
             font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
         }
 
         .search-bar button {
-            padding: 6px;
+            padding: 8px;
             font-size: 14px;
-            background-color: #d4a373;
+            background-color: #2196f3;
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 0 5px 5px 0;
+            transition: background 0.3s;
         }
 
         .search-bar button:hover {
-            background-color: #c58f4f;
+            background-color: #1976d2;
         }
 
         main {
             padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
 
-        h1 {
-            color: #2b2b2b;
+        h2 {
+            color: #6a1b9a;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         .categories {
@@ -61,22 +90,35 @@
         .category-card {
             text-align: center;
             padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 2px solid #6a1b9a;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
 
         .category-card:hover {
-            background-color: #f4f4f4;
-            transform: scale(1.05);
+            background-color: #f3e5f5;
+            transform: scale(1.1);
             cursor: pointer;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>DaVintage</h1>
+        <div class="logo">
+            <h1>DaVintage</h1>
+            <p>Est. 2026</p>
+        </div>
         <div class="search-bar">
             <input type="text" placeholder="Search for brands, items...">
             <button>Search</button>
@@ -86,14 +128,38 @@
     <main>
         <h2>Our Brands & Labels</h2>
         <div class="categories">
-            <div class="category-card">Levi's</div>
-            <div class="category-card">Adidas</div>
-            <div class="category-card">Nike</div>
-            <div class="category-card">Tommy Hilfiger</div>
-            <div class="category-card">Dr. Martens</div>
-            <div class="category-card">Ralph Lauren</div>
-            <div class="category-card">Vintage Gucci</div>
-            <div class="category-card">Wrangler</div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/FF6347/FFFFFF?text=Levi's" alt="Levi's Logo">
+                Levi's
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/4682B4/FFFFFF?text=Adidas" alt="Adidas Logo">
+                Adidas
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/FF4500/FFFFFF?text=Nike" alt="Nike Logo">
+                Nike
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/7B68EE/FFFFFF?text=Gucci" alt="Gucci Logo">
+                Gucci
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/FFD700/FFFFFF?text=Prada" alt="Prada Logo">
+                Prada
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/32CD32/FFFFFF?text=Ralph" alt="Ralph Lauren Logo">
+                Ralph Lauren
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/DC143C/FFFFFF?text=Tommy" alt="Tommy Hilfiger Logo">
+                Tommy Hilfiger
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80/00CED1/FFFFFF?text=Wrangler" alt="Wrangler Logo">
+                Wrangler
+            </div>
         </div>
     </main>
 </body>
